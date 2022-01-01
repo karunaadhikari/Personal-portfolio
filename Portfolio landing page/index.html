@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karuna Adhikari</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+    </style>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alata&family=PT+Serif:wght@700&display=swap");
+    </style>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/388c8ec385.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="nav">
+        <div
+          href="javascript:void(0);"
+          class="header__hamburger hide-for-desktop"
+          onclick="myFunction()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="header__links hide-for-desktop" id="links">
+          <a class="active" href="#">HOME</a><a href="#about">PORTFOLIO</a
+          ><a href="#contact">CONTACT</a>
+        </div>
+
+        <div class="header__links hide-for-mobile" id="mlinks">
+          <a class="active" href="#">HOME</a><a href="#about">PORTFOLIO</a
+          ><a href="#contact">CONTACT</a>
+        </div>
+      </div>
+      <!-- End of the nav-->
+
+      <div class="header__flex">
+        <div class="header__details">
+          <h3>Hy! I'm <span>Karuna Adhikari </span></h3>
+          <p>I love building beautiful websites</p>
+        </div>
+
+        <div class="header__image">
+          <img src="/images/hero1.png" alt="background image" />
+        </div>
+      </div>
+      <!--end of header flex-->
+    </div>
+    <!-- End of header-->
+
+    <div class="container">
+      <div class="container__img" id="about">
+        <img src="/images/profile2.png" />
+      </div>
+      <div class="container__details" id="aboutme">
+        <h3>About Me</h3>
+        <p>
+          I am an evolving front-end developer looking for a new role in an
+          exciting company. I focus on writing accessible HTML using morden CSS
+          and writing clean JavaScript.I can adapt to whatever tools required
+          and I'am based on Kathmandu, Nepal. When I am coding you will find me
+          outdoors. I love being out in nature whether going out for a walk or a
+          run.
+        </p>
+        <a href="http://127.0.0.1:5500/form.html"
+          ><button type="button">Mail Me</button></a
+        >
+      </div>
+    </div>
+    <!--End of container -->
+
+    <div class="section">
+      <div class="section__academic">
+        <h3>Academic History</h3>
+        <p>Bachelors Of Engineering In Information Technoloy</p>
+        <p>Cosmos College of Management and Technology</p>
+        <p>Tutepani, Lalitpur|sep 2014 - Nov 2019 | GPA 3.05</p>
+
+        <p>High School| Morgan International College|2012-2013</p>
+      </div>
+
+      <div class="section__technical">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>SASS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="section__interest">
+        <h3>Interest</h3>
+        <ul>
+          <li>Artificial Intelligence</li>
+          <li>Video Games</li>
+          <li>Mindfullness</li>
+          <li>Nature</li>
+        </ul>
+      </div>
+    </div>
+    <!--End of section-->
+
+    <div class="footer" id="contact">
+      <div class="footer__mail">
+        <a href="mailto:karunaadhikari19@gmail.com"
+          >Karunaadhikari19@gmail.com</a
+        >
+      </div>
+
+      <div class="footer_links">
+        <a href="https://github.com/"> <i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a
+        ><a href="https://www.google.com"> <i class="fab fa-google"></i></a
+        ><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <!-- End of footer-->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

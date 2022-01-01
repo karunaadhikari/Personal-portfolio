@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(217, 198, 247);
+  height: 3.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+
+  > i {
+    &:not(:last-child) {
+      padding-right: 0.5rem;
+    }
+  }
+
+  @include for-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__mail {
+    font-size: 0.8rem;
+    padding-bottom: 0.9rem;
+  }
+
+  &__links {
+    padding-bottom: 0.9rem;
+  }
+}
