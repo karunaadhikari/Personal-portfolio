@@ -1,0 +1,98 @@
+.section {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+
+  @include for-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__academic {
+    width: 23rem;
+    background-color: rgb(217, 198, 247);
+
+    padding: 1rem;
+    border-radius: 10px;
+    margin-right: 0.7rem;
+    margin-left: -0.2rem;
+
+    > h3 {
+      font-family: "PT Serif", serif;
+      color: rgb(41, 0, 138);
+    }
+
+    p {
+      font-family: "Lora", serif;
+      color: rgb(88, 86, 86);
+    }
+
+    @include for-mobile {
+      width: 306px;
+      margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.75;
+    }
+  } // end of academic
+
+  &__technical {
+    width: 23rem;
+    background-color: rgb(217, 198, 247);
+
+    padding: 1rem;
+
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    pointer-events: auto;
+
+    > h3 {
+      font-family: "PT Serif", serif;
+      color: rgb(41, 0, 138);
+    }
+
+    li {
+      font-family: "Lora", serif;
+      color: rgb(88, 86, 86);
+    }
+    @include for-mobile {
+      width: 306px;
+      height: 320px;
+      margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.75;
+    }
+  } //end of technical
+
+  &__interest {
+    width: 23rem;
+    background-color: rgb(217, 198, 247);
+    padding: 1rem;
+    border-radius: 10px;
+
+    > h3 {
+      font-family: "PT Serif", serif;
+      color: rgb(41, 0, 138);
+    }
+
+    li {
+      font-family: "Lora", serif;
+      color: rgb(88, 86, 86);
+    }
+
+    @include for-mobile {
+      width: 306px;
+      height: 328px;
+    }
+
+    &:hover {
+      transform: scale(1.09);
+      opacity: 0.75;
+    }
+  }
+} // end of section
